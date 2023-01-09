@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">Compose Canvas</string>
+  <string name="title_activity_test">TestActivity</string>
+  <string name="title_activity_star_clicker">StarClickerActivity</string>
+</resources>
