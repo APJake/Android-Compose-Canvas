@@ -14,6 +14,11 @@
       android:theme="@style/Theme.ComposeCanvas"
       tools:targetApi="31">
     <activity
+        android:name=".features.basic_canvas.BasicCanvasActivity"
+        android:exported="false"
+        android:label="@string/title_activity_draw_text"
+        android:theme="@style/Theme.ComposeCanvas" />
+    <activity
         android:name=".features.test.TestActivity"
         android:exported="false"
         android:label="@string/title_activity_test"
