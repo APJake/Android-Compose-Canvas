@@ -32,6 +32,11 @@
         android:name=".features.weight_picker.WeightPickerActivity"
         android:exported="true"
         android:theme="@style/Theme.ComposeCanvas">
+    </activity>
+    <activity
+        android:name=".features.asm_clock.AsmClockActivity"
+        android:exported="true"
+        android:theme="@style/Theme.ComposeCanvas">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 
