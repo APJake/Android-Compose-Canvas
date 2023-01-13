@@ -19,17 +19,17 @@
         android:label="@string/title_activity_draw_text"
         android:theme="@style/Theme.ComposeCanvas" />
     <activity
-        android:name=".features.test.TestActivity"
-        android:exported="false"
-        android:label="@string/title_activity_test"
-        android:theme="@style/Theme.ComposeCanvas" />
-    <activity
         android:name=".features.star_clicker.StarClickerActivity"
         android:exported="false"
         android:label="@string/title_activity_star_clicker"
         android:theme="@style/Theme.ComposeCanvas" />
     <activity
         android:name=".MainActivity"
+        android:exported="true"
+        android:theme="@style/Theme.ComposeCanvas">
+    </activity>
+    <activity
+        android:name=".features.weight_picker.WeightPickerActivity"
         android:exported="true"
         android:theme="@style/Theme.ComposeCanvas">
       <intent-filter>
