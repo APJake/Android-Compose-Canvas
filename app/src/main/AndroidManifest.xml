@@ -34,6 +34,11 @@
       </intent-filter>
     </activity>
     <activity
+        android:name=".features.projects.analog_watch.JAnalogWatchActivity"
+        android:exported="true"
+        android:theme="@style/Theme.ComposeCanvas">
+    </activity>
+    <activity
         android:name=".features.weight_picker.WeightPickerActivity"
         android:exported="true"
         android:theme="@style/Theme.ComposeCanvas">

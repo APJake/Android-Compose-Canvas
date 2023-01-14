@@ -20,6 +20,8 @@ import com.apjake.compose_canvas.common.ext.goTo
 import com.apjake.compose_canvas.features.ans_clock.AnsClockActivity
 import com.apjake.compose_canvas.features.asm_clock.AsmClockActivity
 import com.apjake.compose_canvas.features.basic_canvas.BasicCanvasActivity
+import com.apjake.compose_canvas.features.projects.analog_watch.JAnalogWatch
+import com.apjake.compose_canvas.features.projects.analog_watch.JAnalogWatchActivity
 import com.apjake.compose_canvas.features.star_clicker.StarClickerActivity
 import com.apjake.compose_canvas.features.weight_picker.WeightPickerActivity
 
@@ -64,6 +66,12 @@ class MainActivity : ComposeActivity() {
                         title = "Ex -1 (Clock) (solution)",
                         onClick = {
                             goTo(AnsClockActivity::class.java)
+                        }
+                    ),
+                    AppFunctionModel(
+                        title = "Project - 01 (Custom Analog Watch)",
+                        onClick = {
+                            goTo(JAnalogWatchActivity::class.java)
                         }
                     )
                 )

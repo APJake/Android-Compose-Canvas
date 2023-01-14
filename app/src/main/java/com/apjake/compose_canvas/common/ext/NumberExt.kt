@@ -19,3 +19,12 @@ val Int.asDegree: Float
 val Float.asDegree: Float
     get() = this * (180f / PI).toFloat()
 
+fun Int.withZeroLeading(
+    size: Int,
+): String {
+    var tmp = this.toString()
+    while (tmp.length < size) {
+        tmp = "0$tmp"
+    }
+    return tmp
+}
