@@ -27,6 +27,11 @@
         android:name=".MainActivity"
         android:exported="true"
         android:theme="@style/Theme.ComposeCanvas">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
     </activity>
     <activity
         android:name=".features.weight_picker.WeightPickerActivity"
@@ -37,11 +42,11 @@
         android:name=".features.asm_clock.AsmClockActivity"
         android:exported="true"
         android:theme="@style/Theme.ComposeCanvas">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
+    </activity>
+    <activity
+        android:name=".features.ans_clock.AnsClockActivity"
+        android:exported="true"
+        android:theme="@style/Theme.ComposeCanvas">
     </activity>
   </application>
 
