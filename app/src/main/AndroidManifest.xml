@@ -53,6 +53,11 @@
         android:exported="true"
         android:theme="@style/Theme.ComposeCanvas">
     </activity>
+    <activity
+        android:name=".features.draggable_curve.DraggableCurveActivity"
+        android:exported="true"
+        android:theme="@style/Theme.ComposeCanvas">
+    </activity>
   </application>
 
 </manifest>

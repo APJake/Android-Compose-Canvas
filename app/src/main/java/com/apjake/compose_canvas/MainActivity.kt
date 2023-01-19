@@ -7,6 +7,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
@@ -20,6 +22,7 @@ import com.apjake.compose_canvas.common.ext.goTo
 import com.apjake.compose_canvas.features.ans_clock.AnsClockActivity
 import com.apjake.compose_canvas.features.asm_clock.AsmClockActivity
 import com.apjake.compose_canvas.features.basic_canvas.BasicCanvasActivity
+import com.apjake.compose_canvas.features.draggable_curve.DraggableCurveActivity
 import com.apjake.compose_canvas.features.projects.analog_watch.JAnalogWatch
 import com.apjake.compose_canvas.features.projects.analog_watch.JAnalogWatchActivity
 import com.apjake.compose_canvas.features.star_clicker.StarClickerActivity
@@ -73,6 +76,12 @@ class MainActivity : ComposeActivity() {
                         onClick = {
                             goTo(JAnalogWatchActivity::class.java)
                         }
+                    ),
+                    AppFunctionModel(
+                        title = "Draggable curve (Path)",
+                        onClick = {
+                            goTo(DraggableCurveActivity::class.java)
+                        }
                     )
                 )
             )
@@ -84,8 +93,11 @@ class MainActivity : ComposeActivity() {
 fun AppFunctions(
     functions: List<AppFunctionModel>,
 ) {
+    val scrollState = rememberScrollState()
     LazyColumn(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(scrollState),
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         items(
