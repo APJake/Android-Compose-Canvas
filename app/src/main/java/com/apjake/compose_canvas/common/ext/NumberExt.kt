@@ -7,6 +7,14 @@ import kotlin.math.PI
  * on Jan 14, 2023
  */
 
+fun Int.withSuffix(size: Int = 2, suffix: String = "0"): String {
+    var tmp = this.toString()
+    while (tmp.length < size) {
+        tmp = suffix + tmp
+    }
+    return tmp
+}
+
 val Int.asRadian: Float
     get() = this.toFloat().asRadian
 
